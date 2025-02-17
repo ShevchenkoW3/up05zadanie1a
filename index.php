@@ -23,8 +23,7 @@ $result1 = $mysqli->query($sql);
         </div>
     </div><br>
     <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-10">
+        <div class="col-lg-12">
             <h2 class="text-center">Решенные заявки</h2>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <?php 
@@ -39,17 +38,15 @@ $result1 = $mysqli->query($sql);
                             <p class="card-text">'.$row['name_zayavka'].'<br>'.$row['name_category'].'</p>
                         </div>
                     </div>
-                        ';
+                    </div>';
                     }
                 }
                 else{
                     echo '<p class="text-center">Нет решенных проблем</p>';
                 }
                 ?>  
-            </div>
         </div>
         </div>
-        <div class="col-lg-1"></div>
     </div>
 </div><br>
 <?php include 'template/footer.php';?>
