@@ -6,7 +6,6 @@ $message = '';
 if(!empty($_POST)){
    $fio = $_POST['fio'];
    $email = $_POST['email'];
-   $phone = $_POST['phone'];
    $login = $_POST['login'];
    $password = $_POST['password'];
    $password_repeat = $_POST['password_repeat'];
